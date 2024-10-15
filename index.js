@@ -1,6 +1,10 @@
 const express = require('express');
+const cors = require('cors');
+
+
 
 const app = express()
+app.use(cors());
 
 app.use(express.json())
 
@@ -15,8 +19,10 @@ let posts = [
     dateCaught: '2024-10-01',
     bait: 'Воблер',
     feed: 'Прикормка для щуки',
-    likes: 0,           
-    likedBy: []          
+    likes: 0,
+    description: "щука весом 2,5 кг, использовал тесто как наживку.",
+    fishWeight: 2.5           
+           
   },
   {
     id: 2,
@@ -29,13 +35,15 @@ let posts = [
     bait: 'Кукуруза',
     feed: 'Прикормка для карпа',
     likes: 0,
-    likedBy: []
+    description: "Карп весом 4 кг, использовал тесто как наживку.",
+    fishWeight: 4
+   
   }
 ];
 
 
 
-  app.get('api/posts',(req,res)=>{
+  app.get('/api/posts',(req,res)=>{
     res.send(posts)
   })
 
