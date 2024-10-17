@@ -12,12 +12,12 @@ let posts = [
   {
     id: 1,
     fishingType: 'Спиннинг',
-    fishermanName: 'Иван Петров',
+    fishermanName: 'Артем Бородай',
     fishType: 'Щука',
-    fishPhoto: 'http://example.com/photo1.jpg',
+    fishPhoto: '/img/boroday.jpg',
     location: 'Река Днепр',
     dateCaught: '2024-10-01',
-    bait: 'Воблер',
+    bait: 'Селект - Хастлер 160',
     feed: 'Прикормка для щуки',
     likes: 0,
     description: "щука весом 2,5 кг, использовал тесто как наживку.",
@@ -26,17 +26,17 @@ let posts = [
   },
   {
     id: 2,
-    fishingType: 'Удочка',
-    fishermanName: 'Сергей Иванов',
+    fishingType: 'фідер',
+    fishermanName: 'Віктор вацко',
     fishType: 'Карп',
-    fishPhoto: 'http://example.com/photo2.jpg',
+    fishPhoto: '/img/vatsko.jpg',
     location: 'Река Днепр',
     dateCaught: '2024-09-28',
     bait: 'Кукуруза',
     feed: 'Прикормка для карпа',
     likes: 0,
     description: "Карп весом 4 кг, использовал тесто как наживку.",
-    fishWeight: 4
+    fishWeight: 24.4
    
   }
 ];
